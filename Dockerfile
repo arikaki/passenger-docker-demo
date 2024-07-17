@@ -11,7 +11,7 @@ CMD ["/sbin/my_init"]
 #
 # Python support
 RUN apt-get update && \
-    apt-get install -y python3.10 python3.10-venv python3.10-dev python3-pip && \
+    apt-get install -y python3.10 python3.10-venv python3.10-dev python3-pip vim && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
